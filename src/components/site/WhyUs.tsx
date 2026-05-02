@@ -1,6 +1,4 @@
-import { Award, Microscope, UserHeart, Star } from "lucide-react";
-// lucide doesn't have UserHeart in all versions — fallback safe icon
-import { HeartHandshake } from "lucide-react";
+import { Award, Microscope, Star, HeartHandshake } from "lucide-react";
 
 const items = [
   {
