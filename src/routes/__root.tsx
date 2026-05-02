@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "dental-harmony" },
+      { name: "description", content: "A modern, luxury dental website for \"Dental Harmony\" specializing in airway, bruxism, and TMJ disorders." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "dental-harmony" },
+      { property: "og:description", content: "A modern, luxury dental website for \"Dental Harmony\" specializing in airway, bruxism, and TMJ disorders." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "dental-harmony" },
+      { name: "twitter:description", content: "A modern, luxury dental website for \"Dental Harmony\" specializing in airway, bruxism, and TMJ disorders." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/26f5475a-5e2e-49e9-a660-6055ce45c57d/id-preview-b717603a--ec540ce9-a3e4-4889-a248-29f0c786e6c9.lovable.app-1777698927001.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/26f5475a-5e2e-49e9-a660-6055ce45c57d/id-preview-b717603a--ec540ce9-a3e4-4889-a248-29f0c786e6c9.lovable.app-1777698927001.png" },
     ],
     links: [
       {
