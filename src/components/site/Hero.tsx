@@ -1,4 +1,5 @@
-import heroImg from "@/assets/hero-clinic.jpg";
+import heroImg from "@/assets/clinic/clinic-4.jpg";
+import sideImg from "@/assets/clinic/clinic-1.jpg";
 import { Phone, Calendar, ArrowRight, Sparkles } from "lucide-react";
 
 export function Hero() {
@@ -20,8 +21,8 @@ export function Hero() {
       <div className="absolute top-1/4 right-[10%] w-72 h-72 rounded-full bg-accent/30 blur-3xl animate-float -z-10" />
       <div className="absolute bottom-1/3 right-[20%] w-56 h-56 rounded-full bg-soft-blue/40 blur-3xl animate-float -z-10" style={{ animationDelay: "2s" }} />
 
-      <div className="mx-auto max-w-7xl px-5 md:px-8 w-full">
-        <div className="max-w-3xl">
+      <div className="mx-auto max-w-7xl px-5 md:px-8 w-full grid lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-7">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary border border-border text-xs uppercase tracking-[0.2em] text-primary/80 mb-7 animate-fade-in">
             <Sparkles className="w-3.5 h-3.5 text-accent" />
             Hyderabad's Airway-Focused Dental Studio
@@ -69,6 +70,22 @@ export function Hero() {
                 <div className="mt-1 text-xs uppercase tracking-[0.15em] text-muted-foreground">{s.l}</div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="hidden lg:block lg:col-span-5 relative animate-fade-up" style={{ animationDelay: "350ms" }}>
+          <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-elegant">
+            <img src={sideImg} alt="Inside Dental Harmony clinic" width={800} height={1000} className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+          </div>
+          <div className="absolute -bottom-6 -left-6 glass border border-border rounded-2xl p-4 shadow-elegant flex items-center gap-3 max-w-[240px]">
+            <div className="w-10 h-10 rounded-full gradient-navy flex items-center justify-center">
+              <Sparkles className="w-4 h-4 text-primary-foreground" />
+            </div>
+            <div>
+              <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Now Open</div>
+              <div className="text-sm font-medium text-primary leading-tight">Banjara Hills, Hyderabad</div>
+            </div>
           </div>
         </div>
       </div>
